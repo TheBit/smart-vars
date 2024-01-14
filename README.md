@@ -5,7 +5,7 @@ The good description is still TBD...
 
 This is inspired by playing around with:
 1. https://github.com/VALiUMgithub/ProximityHoverEffect which is codification of https://youtu.be/TGe3pS5LqEw which is in turn inspired by https://pocketbase.io/.
-2. https://codepen.io/Hyperplexed/pen/MWQeYLW which is from https://youtu.be/htGfnF1zN4g which is in turn inspired by https://linear.app/features.
+2. https://codepen.io/Hyperplexed/pen/MWQeYLW which is a tutorial from https://youtu.be/htGfnF1zN4g which is in turn inspired by https://linear.app/features.
 
 Thanx for your work!
 
