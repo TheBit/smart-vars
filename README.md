@@ -1,7 +1,7 @@
 # Smart Vars
 JS Script for automating fancy effects creation using CSS variables
 
-The good description is still TBD...
+> Note: the good description is still TBD...
 
 This is inspired by playing around with:
 1. https://github.com/VALiUMgithub/ProximityHoverEffect which is codification of https://youtu.be/TGe3pS5LqEw which is in turn inspired by https://pocketbase.io/.
@@ -18,25 +18,25 @@ But you wish to ease/speed up their work on some popular effects (like those men
 code custom JS logic for each such effect.
 
 ## Convention
-> Note: this is preliminary explanation, wait for a good one.
+> Note: this is a preliminary explanation, wait for a good one.
 
 Each setup var follows this convention: `--setupSmartVar{FEATURE}-{OBJECT_NAME}`.
 Where `{FEATURE}` can be one of the: `LineSegmentAngleMouseMove` or `TrackMouseMove` (only 2 for now).
-While `{OBJECT_NAME}` is arbitrary unique name (within feature) of the object you wish to apply effect to.
+While `{OBJECT_NAME}` is an arbitrary unique name (within the feature) of the object you wish to apply the effect to.
 
-You can also notice that `{FEATURE}` itself tries to follow smaller convention: `{GEOMETRY_OR_ACTION}{HANDLER}`.
+You can also notice that `{FEATURE}` itself tries to follow a smaller convention: `{GEOMETRY_OR_ACTION}{HANDLER}`.
 With `{GEOMETRY_OR_ACTION}` is one of `LineSegmentAngle` (`LineSegmentDistance` upcoming) or `Track` (`GlobalTrack` upcoming).
 And `{HANDLER}` is for now only `MouseMove` (`MouseScroll` upcoming).
 
 And then if you add to the `:root` for example such var: `--setupSmartVarLineSegmentAngleMouseMove-RightEyeMorty` -
-Smart Vars script will dynamically add var with similar name: `--smartVarLineSegmentAngleMouseMove-RightEyeMorty`.
+Smart Vars script will dynamically add var with a similar name: `--smartVarLineSegmentAngleMouseMove-RightEyeMorty`.
 With angle in degrees between point A and point B which you defined in setup var as first and second CSS selectors.
-Instead of CSS selector - one selector can get special constant `MOUSE_CURSOR` which, obviously, will mean the angle
-will be calculated between specified Node and a mouse cursor on mouse move.
+Instead of a CSS selector - one selector can get a special constant `MOUSE_CURSOR` which, obviously, will mean the angle
+will be calculated between a specified Node and a mouse cursor on mouse move.
 
 If you add var for the second feature, then it will work a bit different.
-You add `--setupSmartVarTrackMouseMove-FirstCard` and define single CSS selector for the Node you wish to add 
-mouse tracking to. Then you will get 2 vars with a similar name: `--smartVarTrackMouseMoveOffsetX-FirstCard` and
+You add `--setupSmartVarTrackMouseMove-FirstCard` and define a single CSS selector for the Node you wish to add 
+mouse tracking. Then you will get 2 vars with a similar name: `--smartVarTrackMouseMoveOffsetX-FirstCard` and
 `--smartVarTrackMouseMoveOffsetY-FirstCard` which be updated on your Node mouse move with event.offsetX and Y respectively.
 
 ## TODO
