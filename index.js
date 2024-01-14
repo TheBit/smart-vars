@@ -72,7 +72,6 @@ function isMouseMoveConfigValid(pointA, pointB) {
   return (isXYPoint(pointA) || pointA === MOUSE_CURSOR) && (isXYPoint(pointB) || pointB === MOUSE_CURSOR);
 }
 
-// TODO: add distance https://p5js.org/reference/#/p5/dist (with map https://p5js.org/reference/#/p5/map) support.
 function initLineSegmentAngleMouseMove() {
   const angleMouseMoveLineSegments = getAllGlobalCssVars(lineSegmentAngleMouseMove.setupSmartVarLineSegmentAngleMouseMove);
   const angleMouseMoveLineSegmentsNames = angleMouseMoveLineSegments.map(getEntityName);
