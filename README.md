@@ -5,7 +5,7 @@ The good description is still TBD...
 
 This is inspired by playing around with:
 1. https://github.com/VALiUMgithub/ProximityHoverEffect which is codification of https://youtu.be/TGe3pS5LqEw which is in turn inspired by https://pocketbase.io/.
-2. https://codepen.io/Hyperplexed/pen/MWQeYLW / https://www.youtube.com/watch?v=htGfnF1zN4g.
+2. https://codepen.io/Hyperplexed/pen/MWQeYLW / https://www.youtube.com/watch?v=htGfnF1zN4g which is in turn inspired by https://linear.app/features.
 
 Thanx for your work!
 
@@ -18,7 +18,7 @@ But you wish to ease/speed up their work on some popular effects (like those men
 code custom JS logic for each such effect.
 
 ## TODO
-[] Add Global Mouse Tracker
-[] Add Line Segment distance calculation
-[] Add mouse scroll handling
-[] Watch the rest of Hyperplexed (and others) and find good candidates for Smart Vars
+- [ ] Add Global Mouse Tracker
+- [ ] Add Line Segment distance calculation
+- [ ] Add mouse scroll handling
+- [ ] Watch the rest of Hyperplexed (and others) and find good candidates for Smart Vars
