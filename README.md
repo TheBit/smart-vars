@@ -44,3 +44,5 @@ mouse tracking. Then you will get 2 vars with a similar name: `--smartVarTrackMo
 - [ ] Add Line Segment distance calculation
 - [ ] Add mouse scroll handling
 - [ ] Watch the rest of Hyperplexed (and others) and find good candidates for Smart Vars
+- [ ] Add versioning
+- [ ] Add minified version
