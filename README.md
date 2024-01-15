@@ -24,6 +24,10 @@ Each setup var follows this convention: `--setupSmartVar{FEATURE}-{OBJECT_NAME}`
 Where `{FEATURE}` can be one of the: `LineSegmentAngleMouseMove` or `TrackMouseMove` (only 2 for now).
 While `{OBJECT_NAME}` is an arbitrary unique name (within the feature) of the object you wish to apply the effect to.
 
+You identify the object(s) in the var's value as CSS Selectors. For 2 mentioned features, the first one requires 2 
+objects: point A to calculate angle from, and point B to which angle should be calculated (one of the points can be 
+a mouse cursor). And the second feature requires only 1 CSS selector to identify an object that should track mouse movement.
+
 You can also notice that `{FEATURE}` itself tries to follow a smaller convention: `{GEOMETRY_OR_ACTION}{HANDLER}`.
 With `{GEOMETRY_OR_ACTION}` is one of `LineSegmentAngle` (`LineSegmentDistance` upcoming) or `Track` (`GlobalTrack` upcoming).
 And `{HANDLER}` is for now only `MouseMove` (`MouseScroll` upcoming).
